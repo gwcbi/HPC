@@ -1,10 +1,6 @@
 # BASH Commands
 
-Here are some BASH commands
-
-The following are bits of code that primarily serve as teaching tools and reminders.
-
-## Helpful bash commands  
+Here are some BASH commands 
 
 `man bash_command`  
 Although I give examples of commands below with a short description, this only scratches the surface of what they can do.  If you have questions regarding a command, you should always check the man pages about the command.  These pages provide the full documentation for all bash commands.  If there are still questions after viewing the man pages, there is always <a href="http://www.google.com">Google</a> and <a href="http://stackoverflow.com/">stackoverflow</a>.  
