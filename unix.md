@@ -1,4 +1,4 @@
-##Using Unix
+## Using Unix
 
 First you have to get to the command line. If you are using a Mac, open Terminal, which is found in Applications in the Utilities folder.
 
