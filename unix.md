@@ -35,5 +35,6 @@ Returns the path to the current directory
 Copies a file from you current directory and places in a different directory.  
 
 `mv file_name path_to_new_directory`  
-Does the same thing as cp, but does not make a copy and just moves the file.  
+Moves the file to a new directory.  
 
+Once you feel comfortable with these commands, you can create and edit files using a text editor, or log onto Colonial One.
