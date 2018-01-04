@@ -1,19 +1,23 @@
 ## SLURM
 
-Before running any jobs on the cluster, have a look at the <a href="https://colonialone.gwu.edu/">Colonial One wiki page</a>. Slurm (Simple Linux Utility for Resource Management) is Colonial One's cluster management and job scheduling system.
+Before running any jobs on the cluster, have a look at the <a href="https://colonialone.gwu.edu/">Colonial One wiki page</a>. Slurm (Simple Linux Utility for Resource Management) is Colonial One's cluster management and job scheduling system. This is the simplest way to run jobs.
 
 ### Slurm commands when logged in on Colonial One
 
-`sbatch shell_file.sh`  When executed in your home directory, this submits a job to the cluster (see example below). The script will typically contain one or more srun commands to launch parallel tasks.
+`sbatch shell_file.sh`
+When executed in your home directory, this submits a job to the cluster (see example below). The script will typically contain one or more srun commands to launch parallel tasks.
 `squeue`  Shows your jobs that are either running or in the queue.  It returns the following information: Job ID, Partition, Name, User, Time, and Nodes.  
-`scancel job_id`  This cancels a job that is in the queue or running on the cluster.  You can get the job id by executing `squeue` when logged in on the cluster.  
-`sinfo`  Shows available and unavailable nodes on the cluster according to partition (i.e., 64gb, 128gb, etc.) It has a wide variety of filtering, sorting, and formatting options.
+`sinfo`  
+Shows available and unavailable nodes on the cluster according to partition (i.e., 64gb, 128gb, etc.) It has a wide variety of filtering, sorting, and formatting options.
+`srun` 
+This is used to submit a job for execution or initiate job steps in real time. srun has a wide variety of options to specify resource requirements, including: minimum and maximum node count, processor count, specific nodes to use or not use, and specific node characteristics (so much memory, disk space, certain required features, etc.). A job can contain multiple job steps executing sequentially or in parallel on independent or shared resources within the job's node allocation.
+`salloc -N 1 -p short -t 300` 
+Typically this is used to allocate resources for a job and spawn a shell. The shell is then used to execute srun commands to launch parallel tasks. Use this when you are [running interactive jobs] (interactivejobs.md) on Colonial One.
 
-`salloc -p short -t 10` is used to allocate resources for a job in real time. Typically this is used to allocate resources and spawn a shell. The shell is then used to execute srun commands to launch parallel tasks.
+`scancel job_id`
+This cancels a job that is in the queue or running on the cluster.  You can get the job id by executing `squeue` when logged in on the cluster.  
 
-`scancel job_id` is used to cancel a pending or running job or job step. 
 
-`srun` is used to submit a job for execution or initiate job steps in real time. srun has a wide variety of options to specify resource requirements, including: minimum and maximum node count, processor count, specific nodes to use or not use, and specific node characteristics (so much memory, disk space, certain required features, etc.). A job can contain multiple job steps executing sequentially or in parallel on independent or shared resources within the job's node allocation.
 
 ### Example Slurm shell script
 The text below is saved in a text file ending in .sh (i.e., a shell script).  The shell script contains the commands for the cluster to execute.
