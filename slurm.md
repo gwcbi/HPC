@@ -1,6 +1,21 @@
-### Example Slurm shell script
-Before running any jobs on the cluster, have a look at the <a href="https://colonialone.gwu.edu/">Colonial One wiki page</a>.
+## SLURM
 
+Before running any jobs on the cluster, have a look at the <a href="https://colonialone.gwu.edu/">Colonial One wiki page</a>. Slurm (Simple Linux Utility for Resource Management) is Colonial One's cluster management and job scheduling system.
+
+### Slurm commands when logged in on Colonial One
+
+`sbatch shell_file.sh`  When executed in your home directory, this submits a job to the cluster (see example below). The script will typically contain one or more srun commands to launch parallel tasks.
+`squeue`  Shows your jobs that are either running or in the queue.  It returns the following information: Job ID, Partition, Name, User, Time, and Nodes.  
+`scancel job_id`  This cancels a job that is in the queue or running on the cluster.  You can get the job id by executing `squeue` when logged in on the cluster.  
+`sinfo`  Shows available and unavailable nodes on the cluster according to partition (i.e., 64gb, 128gb, etc.) It has a wide variety of filtering, sorting, and formatting options.
+
+`salloc -p short -t 10` is used to allocate resources for a job in real time. Typically this is used to allocate resources and spawn a shell. The shell is then used to execute srun commands to launch parallel tasks.
+
+`scancel job_id` is used to cancel a pending or running job or job step. 
+
+`srun` is used to submit a job for execution or initiate job steps in real time. srun has a wide variety of options to specify resource requirements, including: minimum and maximum node count, processor count, specific nodes to use or not use, and specific node characteristics (so much memory, disk space, certain required features, etc.). A job can contain multiple job steps executing sequentially or in parallel on independent or shared resources within the job's node allocation.
+
+### Example Slurm shell script
 The text below is saved in a text file ending in .sh (i.e., a shell script).  The shell script contains the commands for the cluster to execute.
 
 ```
@@ -33,16 +48,7 @@ commands to perform on the cluster
 9. `module load` loads any modules you need to perform tasks on the cluster.  In order to see what modules are on the cluster, you can log into the cluster and execute `module avail` in the terminal.  A list will appear and just copy and past the name of the module after `module load`.  You can load as many modules as needed.  
 **NOTE:** You can request cores instead of nodes, although I don't think it works on Colonial One. To select cores and not an entire node, remove `-n 16` from the shell script and add `-c 6` and `--mem-per-cpu=5333`. Here `-c` requests the number of cores, while `--mem-per-cpu` allocates an amount of memory (Mb) per cpu.   
 
-### Slurm commands when logged in on the cluster  
 
-`sbatch shell_file`  
-When executed in your home directory, this submits a job to the cluster.  
-`squeue`  
-Shows your jobs that are either running or in the queue.  It returns the following information: Job ID, Partition, Name, User, Time, and Nodes.  
-`scancel job_id`  
-This cancels a job that is in the queue or running on the cluster.  You can get the job id by executing `squeue` when logged in on the cluster.  
-`sinfo`  
-Shows available and unavailable nodes on the cluster according to partition (i.e., 64gb, 128gb, etc.)
 
 ### Example Slurm array shell script
 
