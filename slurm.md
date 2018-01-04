@@ -17,7 +17,7 @@ Shows available and unavailable nodes on the cluster according to partition (i.e
 This is used to submit a job for execution or initiate job steps in real time. srun has a wide variety of options to specify resource requirements, including: minimum and maximum node count, processor count, specific nodes to use or not use, and specific node characteristics (so much memory, disk space, certain required features, etc.). A job can contain multiple job steps executing sequentially or in parallel on independent or shared resources within the job's node allocation.
 
 `salloc -N 1 -p short -t 300`
-Typically this is used to allocate resources for a job and spawn a shell. The shell is then used to execute srun commands to launch parallel tasks. Use this when you are [running interactive jobs] (interactive_jobs.md) on Colonial One.
+Typically this is used to allocate resources for a job and spawn a shell. The shell is then used to execute srun commands to launch parallel tasks. Use this when you are [running interactive jobs](interactive_jobs.md) on Colonial One.
 
 `scancel job_id`
 This cancels a job that is in the queue or running on the cluster.  You can get the job id by executing `squeue` when logged in on the cluster.  
