@@ -6,12 +6,17 @@ Before running any jobs on the cluster, have a look at the <a href="https://colo
 
 `sbatch shell_file.sh`
 When executed in your home directory, this submits a job to the cluster (see example below). The script will typically contain one or more srun commands to launch parallel tasks.
-`squeue`  Shows your jobs that are either running or in the queue.  It returns the following information: Job ID, Partition, Name, User, Time, and Nodes.  
-`sinfo`  
+
+`squeue`
+Shows your jobs that are either running or in the queue.  It returns the following information: Job ID, Partition, Name, User, Time, and Nodes.  
+
+`sinfo`
 Shows available and unavailable nodes on the cluster according to partition (i.e., 64gb, 128gb, etc.) It has a wide variety of filtering, sorting, and formatting options.
-`srun` 
+
+`srun`
 This is used to submit a job for execution or initiate job steps in real time. srun has a wide variety of options to specify resource requirements, including: minimum and maximum node count, processor count, specific nodes to use or not use, and specific node characteristics (so much memory, disk space, certain required features, etc.). A job can contain multiple job steps executing sequentially or in parallel on independent or shared resources within the job's node allocation.
-`salloc -N 1 -p short -t 300` 
+
+`salloc -N 1 -p short -t 300`
 Typically this is used to allocate resources for a job and spawn a shell. The shell is then used to execute srun commands to launch parallel tasks. Use this when you are [running interactive jobs] (interactivejobs.md) on Colonial One.
 
 `scancel job_id`
@@ -49,7 +54,7 @@ commands to perform on the cluster
 6. `-t` is the requested wall time for the job.  If your job takes longer than the requested time, it will FAIL and you will have to re-run it.  The format to request wall time is Days-Hours:Minutes:Seconds.  You do not need to use the days and you can simply request time using Hours:Minutes:Seconds.
 7. `--mail-type` determines which emails you receive.  `ALL` means you receive an email when your job begins, ends, and/or fails.  You have the following options: `BEGIN`, `END`, or `FAIL`.  If I submit a large array job, I usually choose `FAIL` so I don't clog my inbox with Slurm emails.
 8. `--mail-user` is the email address where job notifications are sent.
-9. `module load` loads any modules you need to perform tasks on the cluster.  In order to see what modules are on the cluster, you can log into the cluster and execute `module avail` in the terminal.  A list will appear and just copy and past the name of the module after `module load`.  You can load as many modules as needed.  
+9. `module load` loads any [modules](modules.md) you need to perform tasks on the cluster.  In order to see what modules are on the cluster, you can log into the cluster and execute `module avail` in the terminal.  A list will appear and just copy and paste the name of the module after `module load`.  You can load as many modules as needed.  
 **NOTE:** You can request cores instead of nodes, although I don't think it works on Colonial One. To select cores and not an entire node, remove `-n 16` from the shell script and add `-c 6` and `--mem-per-cpu=5333`. Here `-c` requests the number of cores, while `--mem-per-cpu` allocates an amount of memory (Mb) per cpu.   
 
 
