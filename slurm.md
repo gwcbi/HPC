@@ -22,8 +22,6 @@ Typically this is used to allocate resources for a job and spawn a shell. The sh
 `scancel job_id`  
 This cancels a job that is in the queue or running on the cluster.  You can get the job id by executing `squeue` when logged in on the cluster.  
 
-If you need to run multiple small similar jobs at the same time, you can use a [Slurm array](https://slurm.schedmd.com/job_array.html).
-
 ### Example Slurm shell script
 The text below is saved in a text file ending in .sh (i.e., a shell script).  The shell script contains the commands for the cluster to execute.
 
@@ -57,6 +55,11 @@ commands to perform on the cluster
 9. `module load` loads any [modules](modules.md) you need to perform tasks on the cluster.  In order to see what modules are on the cluster, you can log into the cluster and execute `module avail` in the terminal.  A list will appear and just copy and paste the name of the module after `module load`.  You can load as many modules as needed.  
 **NOTE:** You can request cores instead of nodes, although I don't think it works on Colonial One. To select cores and not an entire node, remove `-n 16` from the shell script and add `-c 6` and `--mem-per-cpu=5333`. Here `-c` requests the number of cores, while `--mem-per-cpu` allocates an amount of memory (Mb) per cpu.   
 
+
+If you need to run multiple small similar jobs at the same time, you can use a [Slurm array](https://slurm.schedmd.com/job_array.html).
+
+`ls *string | sort`  
+Lists all the files in a directory containing the specified string and then sorts them alphabetically.  I typically use this to generate slurm array file lists to process fastqs (need to add `> file_name` to save the list to a file.  I also use the command with `| cat *string > file_name` to concatenate fastq files for genome/transcriptome assemblies.  
 
 
 ### Example Slurm array shell script
