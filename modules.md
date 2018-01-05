@@ -1,4 +1,4 @@
-##Modules
+## Modules
 
 A module file contains all the information needed to configure the shell for and application. Once a module package is initialized, the environment can be modified using module-specific commands. You can use modules to gain accesss to software or to use different versions of packages.
 
