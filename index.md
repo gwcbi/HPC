@@ -8,4 +8,5 @@ Welcome to CBI's High Performance Computing guide. Here you will find everything
 + [File transfer](filetransfer.md)
 + [Interactive Jobs](interactive_jobs.md)
 + [Modules](modules.md)
++ [File Permissions](permissions.md)
 
