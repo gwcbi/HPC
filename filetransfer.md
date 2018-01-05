@@ -15,9 +15,26 @@ You can use scp to securely copy files from your computer to a secure shell (SSH
 rsync can also transfer files between your computer and Colonial One, but both of these commands only work on a Mac or Linux machine. If you are working on a windows machine, or if you like the nice user interface, you can use Cyberduck or Globus for file transfer. 
 
 #### Cyberduck
-1. [Download Cyberduck](https://cyberduck.io/)
-2. set it up
-4. use it
+1. [Download Cyberduck](https://cyberduck.io/) and open it on your computer.
+2. In the top left corner, click "Open Connection"
+4. Select "SFTP (SSH File Transfer Protocol)"
+4. Fill in the server: login.colonialone.gwu.edu and your GW username and password.
+5. Press "Connect" and you can see the files in your home directory on Colonial One.
+6. Drag and drop files to and from your finder window on a Mac or windows explorer on a windows machine. 
 
 #### Globus
-1. [Download Globus](https://www.globus.org/)
+Globus is the industry standard for transferring large amounts of science
+and engineering research data between datacenters and endpoints.
+
+1. Go to the [Globus](https://www.globus.org/) website, and click "Log In" in the top right corner
+2. Select "The George Washington University" at the organizational login
+3. Log in with your GW username and password
+1. Go to EndPoints
+2. Add globus personal connect endpoint and name it
+3. Generate and copy set up key
+4. Download installer and install.
+5. Open app and paste setup key
+6. Go back to webpage and find endpoint
+7. Colonial One's public endpoint is gw#colonialone
+8. Push the arrow to to transfer files from one endpoint to the other.
+
