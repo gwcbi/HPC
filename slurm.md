@@ -28,8 +28,8 @@ The text below is saved in a text file ending in .sh (i.e., a shell script).  Th
 ```
 #!/bin/bash
 #SBATCH -J insert-name-for-job
-#SBATCH -o insert-name-for-std-output
-#SBATCH -e insert-name-for-std-error
+#SBATCH -o insert-name-for-std-output.out
+#SBATCH -e insert-name-for-std-error.err
 #SBATCH -p defq
 #SBATCH -n 16
 #SBATCH -t 2-00:00:00
