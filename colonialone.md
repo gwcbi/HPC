@@ -14,6 +14,6 @@ On your first connection to the HPC, you'll be prompted to accept the ssh keys a
 
 To run a job on the cluster, use [SLURM](slurm.md), Colonial One's scheduler.
 
-To transfer files from your computer to the Colonial One cluster, use a [file transfer](filetransfer.md) software like [Cyberduck](https://cyberduck.en.softonic.com/mac) or [Globus](https://www.globus.org/). 
+To transfer files from your computer to the Colonial One cluster, use a [file transfer](filetransfer.md) software like [Cyberduck](https://cyberduck.io/) or [Globus](https://www.globus.org/). 
 
 Use `logout` to log out of Colonial One.
