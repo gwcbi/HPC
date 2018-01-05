@@ -22,13 +22,13 @@ Executed by itself will bring you to your home directory, while adding a path af
 `cd ..`  
 Changes directory to one-up the directory hierarchy  
 
-`ls`
+`ls`  
 Lists the files and directories in the current directory.
 
-`ls -a`
+`ls -a`  
 Lists the files and directories in the current directory including the hidden (dot) files.
 
-`pwd`
+`pwd`  
 Returns the path to the current directory
 
 `cp file_name path_to_new_directory`  
@@ -37,4 +37,4 @@ Copies a file from you current directory and places in a different directory.
 `mv file_name path_to_new_directory`  
 Moves the file to a new directory.  
 
-Once you feel comfortable with these commands, you can create and edit files using a text editor, or [log onto Colonial One](colonialone.md).
+Once you feel comfortable with these commands, you can create and edit files using a text editor like [vim](https://coderwall.com/p/adv71w/basic-vim-commands-for-getting-started) or [nano](https://www.howtogeek.com/howto/42980/the-beginners-guide-to-nano-the-linux-command-line-text-editor/), or [log onto Colonial One](colonialone.md).
