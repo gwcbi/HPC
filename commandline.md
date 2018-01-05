@@ -17,7 +17,7 @@ Usernames-Macbook-Pro:~ Username$
 There are hundreds of different commands you can use to perform a variety of different functions (hold ESC and press the "y" key for a complete list), but here are a few of the most useful. By typing "man" before the name of each command, you can get information about how to use them.
 
 `cd`  
-Executed by itself will bring you to your home directory, while adding a path after cd will bring you to that directory.  
+Executed by itself will bring you to your home directory, while adding a path after cd will bring you to that directory. A directory is basically a folder that holds your files or other directories.  
 
 `cd ..`  
 Changes directory to one-up the directory hierarchy  
@@ -37,4 +37,4 @@ Copies a file from you current directory and places in a different directory.
 `mv file_name path_to_new_directory`  
 Moves the file to a new directory.  
 
-Once you feel comfortable with these commands, you can create and edit files using a text editor like [vim](https://coderwall.com/p/adv71w/basic-vim-commands-for-getting-started) or [nano](https://www.howtogeek.com/howto/42980/the-beginners-guide-to-nano-the-linux-command-line-text-editor/), or [log onto Colonial One](colonialone.md).
+Once you feel comfortable with these commands and moving around using the command line, you can create and edit files using a text editor like [vim](https://coderwall.com/p/adv71w/basic-vim-commands-for-getting-started) or [nano](https://www.howtogeek.com/howto/42980/the-beginners-guide-to-nano-the-linux-command-line-text-editor/), or [log onto Colonial One](colonialone.md).
