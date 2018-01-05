@@ -52,7 +52,7 @@ salloc: job 2390150 queued and waiting for resources
 ```
 
 You may wait here for a little bit as SLURM finds you the resources you need.
-Hopefully, within few minutes, you will see your allocation was granted.
+Hopefully, within few minutes, you will see your allocation was granted. If there is not a node available, type control "C" to get out of the queue.
 
 
 ### 3. Login to the allocated node
