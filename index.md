@@ -5,4 +5,7 @@ Welcome to CBI's High Performance Computing guide. Here you will find everything
 + [Getting started with command line](commandline.md)
 + [Logging on to Colonial One](colonialone.md)
 + [SLURM](slurm.md)
++ [File transfer](filetransfer.md)
 + [Interactive Jobs](interactive_jobs.md)
++ [Modules](modules.md)
+
