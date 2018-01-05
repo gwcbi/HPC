@@ -12,3 +12,5 @@ loads a module. If you do not list a version number, the most recent version wil
 
 `module unload module_name`
 unloads the named module, and reverts settings back to OS defaults.
+
+You can use `source activate env_name` to activate an environment, or a space within a project with specific dependencies and settings that allow you to use a module. Use `source deactivate` to leave the environment.
