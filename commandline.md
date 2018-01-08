@@ -37,4 +37,30 @@ Copies a file from you current directory and places in a different directory.
 `mv file_name path_to_new_directory`  
 Moves the file to a new directory.  
 
+`cat`
+Concatenates files to standard output. Will print the contents of the file on the screen. `cat file1.txt file2.txt > newfile.txt` will concatenate 2 files into a third file.
+
+`rm`
+This will remove or delete a file (cannot undo)
+
+`mkdir`
+Makes a directory
+
+control `c`
+Kills the current process
+
+control `z`
+Stops or pauses current process
+
+`fg`
+Resumes last stopped job in the foreground
+
+tab: autocompletes while typing
+tab tab: see aailable autocomplete
+
+`chmod`
+Change permissions
+
+`exit`
+Disconnect form Colonial One or current node
 Once you feel comfortable with these commands and moving around using the command line, you can create and edit files using a text editor like [vim](https://coderwall.com/p/adv71w/basic-vim-commands-for-getting-started) or [nano](https://www.howtogeek.com/howto/42980/the-beginners-guide-to-nano-the-linux-command-line-text-editor/), or [log onto Colonial One](colonialone.md).
