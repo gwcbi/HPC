@@ -12,7 +12,7 @@ where `<username>` is your GWU Net ID, the part of your email before the @.
 
 On your first connection to the HPC, you'll be prompted to accept the ssh keys and verify the fingerprint of ColonialOne. Every time you log in, you will be required to give your password, which is the same password you use to access your GW email account. Alternatively, if you want to save 40 minutes a year by not typing in your password every time, you can set up an [SSH key](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2).
 
-To run a job on the cluster, use [SLURM](slurm.md), Colonial One's scheduler or run an [interactive job](interactivejobs.md).
+To run a job on the cluster, use [SLURM](slurm.md), Colonial One's scheduler or run an [interactive job](interactive_jobs.md).
 
 To transfer files from your computer to the Colonial One cluster, use a [file transfer](filetransfer.md) software like [Cyberduck](https://cyberduck.io/) or [Globus](https://www.globus.org/). 
 
