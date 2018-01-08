@@ -11,7 +11,12 @@ When executed in your home directory, this submits a job to the cluster (see exa
 Shows your jobs that are either running or in the queue.  It returns the following information: Job ID, Partition, Name, User, Time, and Nodes.  
 
 `sinfo`  
-Shows available and unavailable nodes on the cluster according to partition (i.e., 64gb, 128gb, etc.) It has a wide variety of filtering, sorting, and formatting options.
+Shows available and unavailable nodes on the cluster according to partition (i.e., 64gb, 128gb, etc.) It has a wide variety of filtering, sorting, and formatting options.  
+The nodes that you can use are:
++ defq: has 64, 128 or 256GB nodes and a 14 day time limit
++ short: 128GB nodes, 2 day time limit
++ debug: 128GB, 2 hour time limit, for interactive jobs or quick tests
++ 2tb: for special requests
 
 `srun`  
 This is used to submit a job for execution or initiate job steps in real time. srun has a wide variety of options to specify resource requirements, including: minimum and maximum node count, processor count, specific nodes to use or not use, and specific node characteristics (so much memory, disk space, certain required features, etc.). A job can contain multiple job steps executing sequentially or in parallel on independent or shared resources within the job's node allocation.
