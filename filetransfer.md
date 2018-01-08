@@ -38,3 +38,4 @@ and engineering research data between datacenters and endpoints.
 7. Colonial One's public endpoint is gw#colonialone
 8. Push the arrow to to transfer files from one endpoint to the other.
 
+If you are working on a project as a group, you should also learn to use [github](github.md) to do collaborative projects.
