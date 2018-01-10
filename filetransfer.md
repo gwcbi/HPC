@@ -21,6 +21,7 @@ rsync can also transfer files between your computer and Colonial One, but both o
 4. Fill in the server: login.colonialone.gwu.edu and your GW username and password.
 5. Press "Connect" and you can see the files in your home directory on Colonial One.
 6. Drag and drop files to and from your finder window on a Mac or windows explorer on a windows machine. 
++Note: for a really big transfer that will take a lot of time, if your computer goes to sleep, it will stop copying. To keep your computer awake, use the command `caffeinate -dims -t 100000`. When you finish, just enter control `c` to cancel the caffeination.
 
 #### Globus
 Globus is the industry standard for transferring large amounts of science
