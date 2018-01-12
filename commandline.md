@@ -59,7 +59,14 @@ Stops or pauses current process
 Resumes last stopped job in the foreground
 
 tab: autocompletes while typing
-tab tab: see aailable autocomplete
+
+tab tab: see available autocomplete
+
+`ls -ll` 
+Lists the files in a directory as well as their dates and permissions
+
+`du -sh` 
+This tells you the disk usage--what is taking up space in a directory
 
 `chmod` 
 Change permissions
