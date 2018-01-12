@@ -43,3 +43,6 @@ and engineering research data between datacenters and endpoints.
 8. Push the arrow to to transfer files from one endpoint to the other.
 
 If you are working on a project as a group, you should also learn to use [github](github.md) to do collaborative projects.
+
+#### Verifying Copy using Checksum
+If you want to verify that a copy has worked, you can do this with a checksum. Many datasets will include a .md5 file or some other file that has an md5 hash (a string of numbers and letters that is calculated by the contents of a folder). If you run the command `md5sum -c *.md5sum` in a folder with your .md5sum  and it gives you the same md5 hashes as is in the .md5sum. This is hard.
