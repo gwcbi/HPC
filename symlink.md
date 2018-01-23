@@ -8,4 +8,6 @@ To make a symbolic link to your directory in lustre from your home directory, en
 
 Then to copy a directory from your home directory to your directory in lustre, use `cp dirname/ lustre/`
 
+To see the symlinks that you have set up, use the command `ls -l`
+
 *Note: If you don't have a directory with your username in lustre, you may have to create one using `mkdir`
