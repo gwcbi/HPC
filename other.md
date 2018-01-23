@@ -7,3 +7,5 @@ Here are some other neat things that don't exactly fit into the previous categor
 [Github](github.md) is also a useful tool.
 
 [Symlinks](symlink.md) can also help you do things quicker.
+
+[Compressing files](compress.md) is good too.
