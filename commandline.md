@@ -12,9 +12,13 @@ You should see a black window that has a command prompt that looks like this:
 ```bash
 Usernames-Macbook-Pro:~ Username$
 ```
+## man pages
+
+By typing `man` before the name of each command, you can get information about how to use them. The manual pages are a set of pages that explain every command available on your system including what they do, the specifics of how you run them and what command line arguments they accept. Some of them are a little hard to get your head around but they are fairly consistent in their structure so once you get the hang of it it's not too bad.To search for something in the man pages, use `/` and then type the search term. To proceed to the next instance of the term, use `n`. To return to the command line, type `q`.
+
 ## BASH Commands
 
-There are hundreds of different commands you can use to perform a variety of different functions (hold ESC and press the "y" key for a complete list), but here are a few of the most useful. By typing "man" before the name of each command, you can get information about how to use them.
+There are hundreds of different commands you can use to perform a variety of different functions (hold ESC and press the "y" key for a complete list), but here are a few of the most useful. 
 
 `cd`  
 Executed by itself will bring you to your home directory, while adding a path after cd will bring you to that directory. A directory is basically a folder that holds your files or other directories.  
