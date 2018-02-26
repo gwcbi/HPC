@@ -14,3 +14,5 @@ loads a module. If you do not list a version number, the most recent version wil
 unloads the named module, and reverts settings back to OS defaults.
 
 You can use `source activate env_name` to activate an environment, or a space within a project with specific dependencies and settings that allow you to use a module. Use `source deactivate` to leave the environment.
+
+To search for a module to find if it is available or what versions it is available in, use the comand `module spider modulename`
