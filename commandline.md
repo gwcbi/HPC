@@ -30,7 +30,7 @@ Changes directory to one-up the directory hierarchy
 Lists the files and directories in the current directory.
 
 `ls -a`  
-Lists the files and directories in the current directory including the hidden (dot) files.
+Lists the files and directories in the current directory including the hidden (dot) files. `ls -al` will show the files in long form (with their sizes and permissions).
 
 `pwd`  
 Returns the path to the current directory
@@ -42,7 +42,13 @@ Copies a file from you current directory and places in a different directory.
 Moves the file to a new directory.  
 
 `cat` 
-Concatenates files to standard output. Will print the contents of the file on the screen. `cat file1.txt file2.txt > newfile.txt` will concatenate 2 files into a third file.
+Concatenates files to standard output. Prints the contents of the file on the screen. `cat file1.txt file2.txt > newfile.txt` will concatenate 2 files into a third file.
+
+`head -100 filename`
+Prints the first 100 lines of filename to the terminal.
+
+`tail -10 filename`
+Prints the last 10 lines of filename to the screen.
 
 `rm` 
 This will remove or delete a file (be careful--cannot undo)
@@ -74,6 +80,9 @@ This tells you the disk usage--what is taking up space in a directory
 
 `chmod` 
 Change permissions
+
+`sed -i -e 's/something/else/g' myfile`
+This will replace every instance of "something" with "else" in myfile.
 
 `exit` 
 Disconnect form Colonial One or current node
