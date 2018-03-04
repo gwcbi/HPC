@@ -51,10 +51,10 @@ Prints the first 100 lines of filename to the terminal.
 Prints the last 10 lines of filename to the screen.
 
 `rm` 
-This will remove or delete a file (be careful--cannot undo)
+This will remove or delete a file (be careful--cannot undo). 
 
 `mkdir` 
-Makes a directory
+Makes a directory. This is what you call folders when you're in the terminal
 
 `rm -rf` 
 Removes a directory and all its contents
