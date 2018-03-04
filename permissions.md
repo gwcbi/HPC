@@ -6,3 +6,4 @@ Use `ls -l` to list files and directories and tell you the permissions they curr
 
 To change the mode of the permissions on a file so that a user can execute it, use the command `chmod u+x file.sh`.
 
+To change a file so that anyone can execute it, use the command `chmod 777 file.sh`
