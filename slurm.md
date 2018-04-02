@@ -5,7 +5,7 @@ Before running any jobs on the cluster, have a look at the <a href="https://colo
 ### Slurm commands when logged in on Colonial One
 
 `sbatch shell_file.sh`  
-When executed in your home directory, this submits a job to the cluster (see example below). The script will typically contain one or more srun commands to launch parallel tasks.
+When executed in your home directory, sbatch submits a job to the cluster (see example below). The script will typically contain one or more srun commands to launch parallel tasks.
 
 `squeue`  
 Shows your jobs that are either running or in the queue.  It returns the following information: Job ID, Partition, Name, User, Time, and Nodes.  
