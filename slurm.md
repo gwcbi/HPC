@@ -13,7 +13,7 @@ Shows your jobs that are either running or in the queue.  It returns the followi
 `sinfo`  
 Shows available and unavailable nodes on the cluster according to partition (i.e., 64gb, 128gb, etc.) It has a wide variety of filtering, sorting, and formatting options.  
 The nodes that you can use are:
-+ defq: has 64, 128 or 256GB nodes and a 14 day time limit
++ defq: This is the default queue. It has 64, 128 or 256GB nodes and a 14 day time limit
 + short: 128GB nodes, 2 day time limit
 + debug: 128GB, 2 hour time limit, for interactive jobs or quick tests
 + 2tb: for special requests
