@@ -1,4 +1,4 @@
-## GREP
+# GREP
 GREP (Global regular expression print) is a way of navigating text using regular expressions. It is similar to find and replace in a word document and has many very useful applications in computing.
 
 The basic pattern for using a grep command is `grep <option> <search pattern> file'
@@ -13,5 +13,23 @@ The options are:
 + -w gives only the lines where the whole word is found
 + -l gives the filename where the match is found
 
-# Wildcards
+## Wildcards
 There are some symbols that can be used to represent more than one thing. For example, `.` is used to designate any character so the command `grep "b.g" filename` could return lines with the words big, bag or bog. 
+
+To search for a `.` you have to escape the function using `\.`
+
+The `*` is used to search for as many of the previous character as there is. For example `grep "b.*g" would return things like bag, bog and bug, but also blog, berg and betting.
+
+Additional search terms include
++ \w for searching for letters, numbers and _
++ \d will search for numbers
++ \r will search for return character
++ \s Space, tab or end of line
++ [A-Z] Single character in the given range
++ [aeiou] Single vowel
++ ^ Beginning of line character
++ $ Last position before end-of-line character
+
+## Capturing and Replacing
++ () captures a search result for use in a replacement term
++ \1 Substitutes matched item into replacement term in numerical order
