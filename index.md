@@ -9,5 +9,6 @@ Welcome to CBI's High Performance Computing guide. Here you will find everything
 + [Interactive Jobs](interactive_jobs.md)
 + [Modules](modules.md)
 + [File Permissions](permissions.md)
++ [GREP](grep.md)
 + [Other](other.md)
 
