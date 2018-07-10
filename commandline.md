@@ -50,6 +50,14 @@ Prints the first 100 lines of filename to the terminal.
 `tail -10 filename`
 Prints the last 10 lines of filename to the screen.
 
+`less filename`
+Lets you view just a page at a time of a file. After entering this command, the following commands can be used to display a document:
+space bar: display the next page,
+b: display the previous page,
+enter/return: display the next line,
+k: display the previous line,
+q: quit the viewer
+
 `rm` 
 This will remove or delete a file (be careful--cannot undo). 
 
