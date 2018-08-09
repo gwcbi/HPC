@@ -12,9 +12,11 @@ You can use scp to securely copy files from your computer to a secure shell (SSH
 
 `scp username@login.colonialone.gwu.edu:sourcefile localfile`
 
+These commands must be run from your local computer. If you are logged in to Colonial One already, open up a new terminal window and copy local files to the cluster.
+
 `rsync` can also transfer files between your computer and Colonial One. It has the advantage of being able to resume fails. 
 
-Both of these commands only work on a Mac or Linux machine. If you are working on a windows machine, or if you like the nice user interface, you can use Cyberduck or Globus for file transfer. 
+Both of these commands only work on a Mac or Linux machine. If you are working on a windows machine, or if you like the nice graphical user interface, you can use Cyberduck or Globus for file transfer. 
 
 + Note: for a really big transfer that will take a lot of time, if your computer goes to sleep, it will stop copying. To keep your computer awake, use the command `caffeinate -dims -t 100000`. When you finish, just enter control `c` to cancel the caffeination.
 
