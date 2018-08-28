@@ -10,5 +10,6 @@ Welcome to CBI's High Performance Computing guide. Here you will find everything
 + [Modules](modules.md)
 + [File Permissions](permissions.md)
 + [GREP](grep.md)
++ [Github](github.md)
 + [Other](other.md)
 
