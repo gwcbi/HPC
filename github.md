@@ -26,6 +26,8 @@ git push -u origin master
 ```
 Now you should see your testfile in your repository on GitHub! 
 
+You can also make and commit changes directly from GitHub. To get the changes you have made on GitHub back on your computer, use `git pull origin master`.
+
 ### Github Commands
 
 `git clone <URL>` 
@@ -44,7 +46,10 @@ Now you should see your testfile in your repository on GitHub!
 	syncs things on my machine to github.com
   
 `git pull` 
-	get of the changes
+	get the changes from github.com onto your computer
+	
+`git log`
+	lets you see all of the commits that have been made
 	
 esc :wq is how you get out of changes.
 
