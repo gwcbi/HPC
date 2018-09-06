@@ -30,7 +30,7 @@ Changes directory to one-up the directory hierarchy
 Lists the files and directories in the current directory.
 
 `ls -a`  
-Lists the files and directories in the current directory including the hidden (dot) files. `ls -al` will show the files in long form (with their sizes and permissions).
+Lists the files and directories in the current directory including the hidden (dot) files. `ls -al` will show the files in long form (with their sizes and permissions). However, these sizes are only of the directory itself and do not say how big everything in a directory is. To see this information, use the command `ls -shR`.
 
 `pwd`  
 Returns the path to the current directory
