@@ -8,6 +8,8 @@ Here are some other neat things that don't exactly fit into the previous categor
 
 [Symlinks](symlink.md) can also help you do things quicker.
 
-[Compressing files](compress.md) is good too.
+[Compressing files](compress.md) to make them easier to send.
+
+[Make an alias](alias.md) so you can log in to Colonial One more easily. 
 
 [Using BAM FILES](https://github.com/IARCbioinfo/BAM-tricks#calculate-coverage-for-each-position-of-a-bed)
