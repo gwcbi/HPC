@@ -24,7 +24,7 @@ This is your home directory where you can store your personal files, data, progr
 If you are a member of a lab or group on Colonial One, you can store things here. Accessible by anyone in your group. 250GB
 
 `/lustre/<group>`
-Used as a shared scratch space. Run jobs here, but do not store things as they will be purged at the beginning of each month.
+Used as a shared scratch space. Run jobs here, but do not store things as they will be purged at the beginning of each month. For more information on GW's purge policy, see the [Colonial One purge page](https://colonialone.gwu.edu/quick-start/purge-policy-for-colonial-one-lustre-filesystem-lustregroups/)
 
 `/import/<group>`
 Longer term storage 
