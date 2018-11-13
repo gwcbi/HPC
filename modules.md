@@ -16,3 +16,5 @@ unloads the named module, and reverts settings back to OS defaults.
 You can use `source activate env_name` to activate an environment, or a space within a project with specific dependencies and settings that allow you to use a module. Use `source deactivate` to leave the environment.
 
 To search for a module to find if it is available or what versions it is available in, use the comand `module spider modulename`
+
+Sometimes you need to find out the address or other information about a module, so that you can see what is included with it. You can do this using the command `module show module_name`.
