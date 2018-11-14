@@ -13,3 +13,5 @@ Here are some other neat things that don't exactly fit into the previous categor
 [Make an alias](alias.md) so you can log in to Colonial One more easily. 
 
 [Using BAM FILES](https://github.com/IARCbioinfo/BAM-tricks#calculate-coverage-for-each-position-of-a-bed)
+
+[For loops in bash](forloops.md) can be useful for repeatedly executing a UNIX command.
