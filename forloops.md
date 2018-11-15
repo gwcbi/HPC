@@ -19,3 +19,9 @@ for file in /directory/*
 done
 ```
 
+### Change names of multiple files in a directory to have directory name in them, and move them to another file
+```
+for f in *; do
+   cp $f/flexcleaned_1*.html fastqc_cleaned/${f}_flexcleaned_1.html
+done
+```
