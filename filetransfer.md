@@ -22,7 +22,7 @@ These commands must be run from your local computer. If you are logged in to Col
 
 Both of these commands only work on a Mac or Linux machine. If you are working on a windows machine, or if you like the nice graphical user interface, you can use Cyberduck or Globus for file transfer. 
 
-+ Note: for a really big transfer that will take a lot of time, if your computer goes to sleep, it will stop copying. To keep your computer awake, use the command `caffeinate -dims -t 100000`. When you finish, just enter control `c` to cancel the caffeination.
++ Note: for a really big transfer that will take a lot of time, if your computer goes to sleep, it will stop copying. To keep your computer awake, use the command `caffeinate -dims -t 100000`. When you finish, just enter control `c` to cancel the caffeination. Alternatively, you can use `tmux` to keep your computer running for an rsync when you're not there. 
 
 #### Cyberduck
 1. [Download Cyberduck](https://cyberduck.io/) and open it on your computer.
