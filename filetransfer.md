@@ -5,6 +5,12 @@ While logged in to Colonial One, you may want to move files from your home direc
 The general format for [rsync](https://www.linux.com/learn/get-know-rsync) commands is `rsync [option] source destination`. A good option to use is `-avh` which will apply the archive, verbose, and human-readable options to your copy. When you use the `-a` option, rsync will automatically do recursive, copy symlinks, preserve permissions, preserve time stamps, preserve group ownerships and preserve owner. For copying folders, do not include the slash `folder/` or it will only copy the contents of the folder over, not the folder itself. 
 
 ### Transferring files from your computer to Colonial One
+`rsync` can transfer files between your computer and Colonial One. It has the advantage of being able to resume fails. 
+
+`rsync -avh localsourcefile  username@login.colonialone.gwu.edu:destinationfile`
+
+To transfer files from Colonial One to your computer:
+`rsync -avh username@login.colonialone.gwu.edu:sourcefile localfile`
 
 You can use scp to securely copy files from your computer to a secure shell (SSH) and back as follows:
 
@@ -13,8 +19,6 @@ You can use scp to securely copy files from your computer to a secure shell (SSH
 `scp username@login.colonialone.gwu.edu:sourcefile localfile`
 
 These commands must be run from your local computer. If you are logged in to Colonial One already, open up a new terminal window and copy local files to the cluster.
-
-`rsync` can also transfer files between your computer and Colonial One. It has the advantage of being able to resume fails. 
 
 Both of these commands only work on a Mac or Linux machine. If you are working on a windows machine, or if you like the nice graphical user interface, you can use Cyberduck or Globus for file transfer. 
 
