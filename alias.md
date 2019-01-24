@@ -14,4 +14,6 @@ Use a text editor like [vim](https://coderwall.com/p/adv71w/basic-vim-commands-f
 
 `alias colone='ssh username@login.colonialone.gwu.edu'`
 
+Type ". .bash_profile" to reload .bash_profile and update any functions you add.
+
 You should now be able to type `colone` and get into ColonialOne.
