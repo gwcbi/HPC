@@ -4,6 +4,8 @@ Before running any jobs on the cluster, have a look at the <a href="https://colo
 
 ### Slurm commands when logged in on Colonial One
 
+Make sure you are reading and writing to lustre for your interactive jobs!
+
 `sbatch shell_file.sh`  
 When executed after navigating to lustre, sbatch submits a job to the cluster (see example below). The script will typically contain one or more srun commands to launch parallel tasks.
 
