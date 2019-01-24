@@ -1,5 +1,7 @@
 # Running interactive jobs on ColonialOne
 
+Make sure you are reading and writing to lustre for your interactive jobs!
+
 ### 1. Check what nodes are available
 
 ```bash
