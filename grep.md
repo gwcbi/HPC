@@ -33,3 +33,14 @@ Additional search terms include
 ## Capturing and Replacing
 + () captures a search result for use in a replacement term
 + \1 Substitutes matched item into replacement term in numerical order
+
+## Examples
+If you want to extract particular rows from a file, that include the words "key words", you can use the following command:
+```
+grep "key words" filename
+```
+and it will list all the lines that include those words.
+If you want to put those lines into a csv, use the command
+```
+grep "key words" filename > newfile.csv
+```
