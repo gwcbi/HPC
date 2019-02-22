@@ -86,6 +86,9 @@ Lists the files in a directory as well as their dates and permissions
 `du -sh` 
 This tells you the disk usage--what is taking up space in a directory
 
+`ls directory | wc -l`
+This lets you count the number of files in a directory
+
 `chmod` 
 Change permissions
 
