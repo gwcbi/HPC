@@ -10,3 +10,7 @@ In Bioinformatics, you often work with very big files. Because of this, programs
 `zless myreads.fastq.gz` will let you browse through a document one line at a time using the spacebar to go forward and `b` to go back a page.
 
 `zcat myreads.fastq.gz | head -400000 | gzip > Test100k.fastq.gz` will make a new file Test100k with just the firsth 400000 lines of myreads.
+
+If you need to unzip a file, use the command `gunzip filename_tar.gz` then if you receive no errors, type: `tar xvf filename_tar`.
+
+The easiest way to zip a file is to use the command `gzip filename`
