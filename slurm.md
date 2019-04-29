@@ -65,7 +65,7 @@ commands to perform on the cluster
 **NOTE:** You can request cores instead of nodes, although I don't think it works on Colonial One. To select cores and not an entire node, remove `-n 16` from the shell script and add `-c 6` and `--mem-per-cpu=5333`. Here `-c` requests the number of cores, while `--mem-per-cpu` allocates an amount of memory (Mb) per cpu.   
 
 
-If you need to run multiple small similar jobs at the same time, you can use a [Slurm array](https://slurm.schedmd.com/job_array.html).
+If you need to run multiple small similar jobs at the same time, you can use a [Slurm array](https://slurm.schedmd.com/job_array.html). This is useful if you are repeating a job (like fastqc or flexbar) for more than one sample. See the example below. 
 
 `ls *string | sort`  
 Lists all the files in a directory containing the specified string and then sorts them alphabetically.  I typically use this to generate slurm array file lists to process fastqs (need to add `> file_name` to save the list to a file.  I also use the command with `| cat *string > file_name` to concatenate fastq files for genome/transcriptome assemblies.  
