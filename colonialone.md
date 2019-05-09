@@ -2,7 +2,7 @@
 Colonial One is GWU's high performance computing cluster that is available to all students and faculty. For more information and some helpful youtube videos, visit the [Colonial One wiki](https://colonialone.gwu.edu/)
 
 ### Getting access
-To request access, email hpchelp@gwu.edu from your GW email account, letting them know what research group you're in, and (for students) CC your advisor / PI.
+To request access, visit the [Getting Access](https://colonialone.gwu.edu/getting-access/) page, and let them know what research group you're in, and (for students) your advisor / PI.
 
 After you are approved, log in on the command line by typing:
 
