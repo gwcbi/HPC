@@ -11,5 +11,6 @@ Welcome to CBI's High Performance Computing guide. Here you will find everything
 + [File Permissions](permissions.md)
 + [GREP](grep.md)
 + [Github](github.md)
++ [Perl libraries](perl.md)
 + [Other](other.md)
 
