@@ -17,3 +17,7 @@ Use a text editor like [vim](https://coderwall.com/p/adv71w/basic-vim-commands-f
 Type `. .bash_profile` to reload .bash_profile and update any functions you add.
 
 You should now be able to type `colone` and get into ColonialOne.
+
+Note: GW is currently transitioning to Pegasus. You may wish to create an alias to connect to pegasus by adding the following to your .bash_profile file:
+
+`alias pegasus='ssh username@pegasus.colonialone.gwu.edu'`
