@@ -102,4 +102,4 @@ Disconnect form Colonial One or current node
 
 Once you feel comfortable with these commands and moving around using the command line, you can create and edit files using a text editor like [vim](https://coderwall.com/p/adv71w/basic-vim-commands-for-getting-started) or [nano](https://www.howtogeek.com/howto/42980/the-beginners-guide-to-nano-the-linux-command-line-text-editor/), or [log onto Colonial One](colonialone.md).
 
-For another great tutorial, visit [this](https://molevol.mbl.edu/index.php/UNIX_tutorial) site.
+For another great tutorial, visit [this](https://molevol.mbl.edu/index.php/UNIX_tutorial) site. For more advanced bash commands [go here](adv_bash.md)
