@@ -34,3 +34,5 @@ Where colonialone staff installs software/modules
 
 
 Use `logout` to log out of Colonial One.
+
+For some groups and projects that require a lot of computing power, you can get access to [Pegasus](https://colonialone.gwu.edu/pegasus/), GW's other cluster. Once you have access to Pegasus, you can log on using 'ssh username@pegasus.colonialone.gwu.edu' and your password. However, this cluster is only available if you are on campus or have access to GW's VPN. To access the VPN, you need to first download [Cisco AnyConnect](https://my.gwu.edu/mod/downloads/?category=VPN), and then follow the instructions listed [here](https://seascf.seas.gwu.edu/vpn-access).
