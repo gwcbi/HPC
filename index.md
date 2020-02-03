@@ -9,6 +9,7 @@ Welcome to CBI's High Performance Computing guide. Here you will find everything
 + [File transfer](filetransfer.md)
 + [Modules](modules.md)
 + [File Permissions](permissions.md)
++ [Making and using environments](environments.md)
 + [GREP](grep.md)
 + [Github](github.md)
 + [Perl libraries](perl.md)
