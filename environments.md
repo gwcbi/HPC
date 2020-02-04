@@ -8,7 +8,12 @@ To make or use an environment using conda, first load miniconda:
 You can make sure that conda is installed an running on your system by typing: `conda --version`
 Note: if you are using miniconda, especially CBI's version of miniconda3, you should not have any modules loaded prior to loading miniconda3 or load additional modules while you have miniconda3 loaded. Doing so can cause big problems. You must open a different terminal window and load other modules there.
 
-If you want to update conda to the latest version, type: `conda update conda` and `y` when asked if you want to procede.
+After installing conda, you need to create channels. It's important to add them in this order so that conda-forge is the highest priority.
+```
+conda config --add channels defaults
+conda config --add channels bioconda
+conda config --add channels conda-forge
+```
 
 Now that you have conda loaded, you can create your environment. You do this by using the command `conda create -n name_of_environment name_of_package`. For example, if I want to create an environment called humann2 with the metaphlan2 package installed, I would use the command:
 `conda create -n humann2 metaphlan2`
@@ -16,5 +21,12 @@ Now that you have conda loaded, you can create your environment. You do this by 
 Once the package is installed with all of its dependencies, you can then use:
 `conda activate humann2` to use your environment. From there, you can run commands with the correct package versions.
 
+Once your environment has been activated, you can see the packages that are in the environment using `conda list`
 
-python -m pip install --user humann2
+`conda info --envs` shows all your enivronments available
+
+`conda deactivate` will deactivate the current environment
+
+To check if they have a recipe or program, see the [bioconda recipe index](https://bioconda.github.io/conda-recipe_index.html).
+
+For more information on using conda, see the [conda documents](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
