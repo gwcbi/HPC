@@ -6,6 +6,7 @@ To make or use an environment using conda, first load miniconda:
 `module load miniconda3`
 
 You can make sure that conda is installed an running on your system by typing: `conda --version`
+
 Note: if you are using miniconda, especially CBI's version of miniconda3, you should not have any modules loaded prior to loading miniconda3 or load additional modules while you have miniconda3 loaded. Doing so can cause big problems. You must open a different terminal window and load other modules there.
 
 After installing conda, you need to create channels. It's important to add them in this order so that conda-forge is the highest priority.
