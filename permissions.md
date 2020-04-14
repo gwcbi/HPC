@@ -6,7 +6,7 @@ Use `ls -l` to list files and directories and tell you the permissions they curr
 
 To change the mode of the permissions on a file so that a user can execute it, use the command `chmod u+x file.sh`. To take away write permissions from users not in the group, use `chmod o-w file.sh`. To take away write permissions from everyone, use `chmod a-w file.sh`. 
 
-You can also change permissions using the unix numeric system where read is 4, write is 2 and execute is 1. To change the permissions so that a user and group can read, write and execute, use the command `chmod 774 file.sh`
+You can also change permissions using the unix numeric system where read is 4, write is 2 and execute is 1. To change the permissions so that a user and group can read, write and execute, use the command `chmod 774 file.sh` (or `chmod a+rwx,o-wx file.sh`).
 
 
 
