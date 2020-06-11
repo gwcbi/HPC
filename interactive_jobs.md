@@ -84,6 +84,16 @@ Make sure to reload any modules you may have loaded as this is a completely new 
 
 You can also open multiple SSH sessions into this node from C1. This is useful if you are running single-threaded processes.
 
+# TMUX
+When you are running a job on an interactive node, if you log off the network or your computer goes to sleep, you will lose your interactive node and drop your job. To keep this from happening, you can use [tmux](https://github.com/tmux/tmux/wiki/Getting-Started), which runs a terminal inside the terminal that you can detach from, so your program will keep running. For all commands available with tmux, use the `man 1 tmux` command, but here are some basics:
+
+* After logging on to Colonial One or pegasus, to start tmux, type `tmux`. You should see a blank screen with a green bar at the bottom.
+* Allocate an interactive node and log in to it.
+* Load all modules and begin running your job.
+* When you finish, type Control-b and then d to disconnect. You may now exit from the server or close your computer.
+* To reconnect, get back onto your interactive node, and type `tmux a -t 0`. This will allow you to attach to th 0th tmux window. Tmux allows you to have several windows running at once, and by changing the number in this command you can access different tmx windows.
+* 'tmux ls` allows you to see the existing sessions you can attach to
+
 ### 4. Exit node and cancel job
 
 When you are finished, you should exit the node using `exit` and then cancel the job using `scancel`.
