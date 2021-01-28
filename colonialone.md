@@ -1,12 +1,14 @@
-# Logging on to Colonial One
-Colonial One is GWU's high performance computing cluster that is available to all students and faculty. For more information and some helpful youtube videos, visit the [Colonial One wiki](https://colonialone.gwu.edu/)
+# Logging on to GW's cluster Pegasus
+Pegasus (formerly called Colonial One) is GWU's high performance computing cluster that is available to all students and faculty. For more information and some helpful youtube videos, visit the [Colonial One wiki](https://colonialone.gwu.edu/)
+
+The Pegasus cluster is only available if you are on campus or have access to GW's VPN. To access the VPN, you need to first download [Cisco AnyConnect](https://my.gwu.edu/mod/downloads/?category=VPN), and then follow the instructions listed [here](https://seascf.seas.gwu.edu/vpn-access).
 
 ### Getting access
 To request access, visit the [Getting Access](https://colonialone.gwu.edu/getting-access/) page, and let them know what research group you're in, and (for students) your advisor / PI.
 
-After you are approved, log in on the command line by typing:
+After you get an email saying you are approved, log in on the command line by typing:
 
-`ssh <username>@login.colonialone.gwu.edu`
+`ssh <username>@pegasus.colonialone.gwu.edu`
 
 where `<username>` is your GWU Net ID, the part of your email before the @.
 
@@ -16,15 +18,15 @@ To run a job on the cluster, use [SLURM](slurm.md), Colonial One's scheduler or 
 
 To transfer files from your computer to the Colonial One cluster, use a [file transfer](filetransfer.md) software like [Cyberduck](https://cyberduck.io/) or [Globus](https://www.globus.org/). 
 
-There are four main directories or filesystems on Colonial One:
-`/home/<user>`
-This is your home directory where you can store your personal files, data, programs etc. 25GB 
+There are four main directories or filesystems on Colonial One, three that you can use:
+`/$SCHOOL/home/<user>`
+This is your home directory where you can store your personal files, data, programs etc. 25GB. Do NOT run jobs in this partition. Use lustre instead.
 
-`/groups/<group>` 
-If you are a member of a lab or group on Colonial One, you can store things here. Accessible by anyone in your group. 250GB
+`/$SCHOOL/groups/<group>` 
+If you are a member of a lab or group on Colonial One, you can store things here. Accessible by anyone in your group. 250GB. DO NOT run jobs here. Instead run on lustre.
 
-`/lustre/<group>`
-Used as a shared scratch space. Run jobs here, but do not store things as they will be purged at the beginning of each month. For more information on GW's purge policy, see the [Colonial One purge page](https://colonialone.gwu.edu/quick-start/purge-policy-for-colonial-one-lustre-filesystem-lustregroups/)
+`/$SCHOOL/lustre/<group>`
+Lustre partition: Used as a shared scratch space. Run jobs here, but do not store things as they will be purged at the beginning of each month. For more information on GW's purge policy, see the [Colonial One purge page](https://colonialone.gwu.edu/quick-start/purge-policy-for-colonial-one-lustre-filesystem-lustregroups/)
 
 `/import/<group>`
 Longer term storage 
@@ -35,4 +37,3 @@ Where colonialone staff installs software/modules
 
 Use `logout` to log out of Colonial One.
 
-For some groups and projects that require a lot of computing power, you can get access to [Pegasus](https://colonialone.gwu.edu/pegasus/), GW's other cluster. Once you have access to Pegasus, you can log on using 'ssh username@pegasus.colonialone.gwu.edu' and your password. However, this cluster is only available if you are on campus or have access to GW's VPN. To access the VPN, you need to first download [Cisco AnyConnect](https://my.gwu.edu/mod/downloads/?category=VPN), and then follow the instructions listed [here](https://seascf.seas.gwu.edu/vpn-access).
