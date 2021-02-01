@@ -1,24 +1,25 @@
 ## File Transfer
-### Transferring files between directories in Colonial One
-While logged in to Colonial One, you may want to move files from your home directory (where you are automatically when you log into the cluster) to a group directory. You can see what groups you are a part of when you log in to Colonial One. You can also transfer files to the high speed lustre file system to run jobs, but be careful because data on lustre is not backed up, and is purged at the beginning of each month. Although you can use the `mv` or `cp` commands to move files in Colonial One, using `rsync` is more secure and will give you more flexibility.
+### Transferring files between directories on the Cluster
+While logged in to Pegasus, you may want to move files from your home directory (where you are automatically when you log into the cluster) to a group directory. You can see what groups you are a part of when you log in to Pegasus. You can also transfer files to the high speed lustre file system to run jobs, but be careful because data on lustre is not backed up, and is purged at the beginning of each month. Although you can use the `mv` or `cp` commands to move files on the cluster, using `rsync` is more secure and will give you more flexibility.
 
 The general format for [rsync](https://www.linux.com/learn/get-know-rsync) commands is `rsync [option] source destination`. A good option to use is `-avh` which will apply the archive, verbose, and human-readable options to your copy. When you use the `-a` option, rsync will automatically do recursive, copy symlinks, preserve permissions, preserve time stamps, preserve group ownerships and preserve owner. For copying folders, do not include the slash `folder/` or it will only copy the contents of the folder over, not the folder itself. 
 
-### Transferring files from your computer to Colonial One
-`rsync` can transfer files between your computer and Colonial One. It has the advantage of being able to resume fails. 
+### Transferring files from your computer to Colonial One (Pegasus)
+`rsync` can transfer files between your computer and Pegasus. It has the advantage of being able to resume fails. From the command line on your computer, use the following commands to transfer files from your computer to Pegasus:
 
-`rsync -avh localsourcefile  username@login.colonialone.gwu.edu:destinationfile`
+`rsync -avh localsourcefile  username@pegasus.colonialone.gwu.edu:destinationfile`
 
-To transfer files from Colonial One to your computer:
-`rsync -avh username@login.colonialone.gwu.edu:sourcefile localfile`
+To transfer files from Pegasus to your computer:
 
-You can use scp to securely copy files from your computer to a secure shell (SSH) and back as follows:
+`rsync -avh username@pegasus.colonialone.gwu.edu:sourcefile localfile`
 
-`scp localsourcefile  username@login.colonialone.gwu.edu:destinationfile`
+You can alsouse scp to securely copy files from your computer to a secure shell (SSH) and back as follows:
 
-`scp username@login.colonialone.gwu.edu:sourcefile localfile`
+`scp localsourcefile  username@pegasus.colonialone.gwu.edu:destinationfile`
 
-These commands must be run from your local computer. If you are logged in to Colonial One already, open up a new terminal window and copy local files to the cluster.
+`scp username@pegasus.colonialone.gwu.edu:sourcefile localfile`
+
+These commands must be run from your local computer. If you are logged in to Pegasus already, open up a new terminal window and copy local files to the cluster.
 
 Both of these commands only work on a Mac or Linux machine. If you are working on a windows machine, or if you like the nice graphical user interface, you can use Cyberduck or Globus for file transfer. 
 
@@ -28,7 +29,7 @@ Both of these commands only work on a Mac or Linux machine. If you are working o
 1. [Download Cyberduck](https://cyberduck.io/) and open it on your computer.
 2. In the top left corner, click "Open Connection"
 4. Select "SFTP (SSH File Transfer Protocol)"
-4. Fill in the server: login.colonialone.gwu.edu and your GW username and password.
+4. Fill in the server: pegasus.colonialone.gwu.edu and your GW username and password.
 5. Press "Connect" and you can see the files in your home directory on Colonial One.
 6. Drag and drop files to and from your finder window on a Mac or windows explorer on a windows machine. 
 
