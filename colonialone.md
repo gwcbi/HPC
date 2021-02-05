@@ -24,13 +24,10 @@ There are four main directories or filesystems on Colonial One, three that you c
 This is your home directory where you can store your personal files, data, programs etc. When you first log on to pegasus, you will be in this partition until you navigate somewhere else. Can only store 25GB. Do NOT run jobs in this partition. Use lustre instead.
 
 `/$SCHOOL/groups/<group>` 
-If you are a member of a lab or group on Colonial One, you can store things here. Accessible by anyone in your group. Store up to 250GB. DO NOT run jobs here. Instead run on lustre. If you are part of CBI, you can navigate to this partition with the command `cd /groups/cbi/Users`. Then, create a directory with your username. 
+If you are a member of a lab or group on Colonial One, you can store things here. Accessible by anyone in your group. Store up to 250GB. DO NOT run jobs here. Instead run on lustre. If you are part of CBI, you can navigate to this partition with the command `cd /groups/cbi/Users`. Then, create a directory with your username. For long term storage, use [GW Box](https://gwu.account.box.com/login).
 
 `/$SCHOOL/lustre/<group>`
 Lustre partition: Used as a shared scratch space. Run jobs here, but do not store things as they will be purged at the beginning of each month. For more information on GW's purge policy, see the [Colonial One purge page](https://colonialone.gwu.edu/quick-start/purge-policy-for-colonial-one-lustre-filesystem-lustregroups/). If you are a part of CBI, you can navigate to the lustre partition with the command `cd /lustre/groups/cbi/Users`. Then, create a directory with your username where you can perform your analyses.
-
-`/import/<group>`
-Longer term storage 
 
 `/c1/apps/`
 Where colonialone staff installs software/modules
