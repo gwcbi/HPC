@@ -4,7 +4,7 @@ While logged in to Pegasus, you may want to move files from your home directory 
 
 The general format for [rsync](https://www.linux.com/learn/get-know-rsync) commands is `rsync [option] source destination`. A good option to use is `-avh` which will apply the archive, verbose, and human-readable options to your copy. When you use the `-a` option, rsync will automatically do recursive, copy symlinks, preserve permissions, preserve time stamps, preserve group ownerships and preserve owner. For copying folders, do not include the slash `folder/` or it will only copy the contents of the folder over, not the folder itself. 
 
-### Transferring files from your computer to Colonial One (Pegasus)
+### Transferring files from your computer to Pegasus
 `rsync` can transfer files between your computer and Pegasus. It has the advantage of being able to resume fails. From the command line on your computer, use the following commands to transfer files from your computer to Pegasus:
 
 `rsync -avh localsourcefile  username@pegasus.colonialone.gwu.edu:destinationfile`
@@ -35,11 +35,23 @@ Both of these commands only work on a Mac or Linux machine. If you are working o
 
 #### Globus
 Globus is the industry standard for transferring large amounts of science
-and engineering research data between datacenters and endpoints.
+and engineering research data between datacenters and endpoints. Globus also has the advantage of being able to transfer files directly from GW Box to the cluster, or files from your GW google account.
 
 1. Go to the [Globus](https://www.globus.org/) website, and click "Log In" in the top right corner
 2. Select "The George Washington University" at the organizational login
-3. Log in with your GW username and password
+3. Log in with your GW username and password (you will have to authenticate and give permission the first time)
+
+To transfer files securely through your browser:
+1. Click on "File manager" on the left side of the window
+2. In the "Collection" box, type "Pegasus" to see the dropdown options for file transfer
+3. Select "Pegasus Box Connector" to transfer files from GW Box
+4. Type the path or navigate manually to the files you want to transfer
+5. On the right side of the page click "Transfer or sync to...."
+6. Put "Pegasus HPC Cluster" in the collection box on the right hand side and add the pathway you want to transfer files to.
+7. Click "Start" to begin secure file transfer
+
+
+To install the Globus Connect app and use endpoints to transfer files:
 1. Go to EndPoints
 2. Add globus personal connect endpoint and name it
 3. Generate and copy set up key
