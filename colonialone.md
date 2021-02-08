@@ -27,7 +27,9 @@ This is your home directory where you can store your personal files, data, progr
 If you are a member of a lab or group on Colonial One, you can store things here. Accessible by anyone in your group. Store up to 250GB. DO NOT run jobs here. Instead run on lustre. If you are part of CBI, you can navigate to this partition with the command `cd /groups/cbi/Users`. Then, create a directory with your username. For long term storage, use [GW Box](https://gwu.account.box.com/login).
 
 `/$SCHOOL/lustre/<group>`
-Lustre partition: Used as a shared scratch space. Run jobs here, but do not store things as they will be purged at the beginning of each month. For more information on GW's purge policy, see the [Colonial One purge page](https://colonialone.gwu.edu/quick-start/purge-policy-for-colonial-one-lustre-filesystem-lustregroups/). If you are a part of CBI, you can navigate to the lustre partition with the command `cd /lustre/groups/cbi/Users`. Then, create a directory with your username where you can perform your analyses.
+Lustre partition: Used as a shared scratch space. Run jobs here, but do not store things as they will be purged at the beginning of each month. For more information on GW's purge policy, see the [Colonial One purge page](https://colonialone.gwu.edu/quick-start/purge-policy-for-colonial-one-lustre-filesystem-lustregroups/). If you are a part of CBI, you can navigate to the lustre partition with the command `cd /lustre/groups/cbi/Users`. Then, create a directory with your username where you can perform your analyses, or perform analyses in the projects directory if it is a group project. 
+
+To see if any of your analyses will be purged at the next monthly purge, search the text file with the purgeable data using grep: `grep "yourusername" /lustre/lustrePurge/cbi_purgeable.txt` .
 
 `/c1/apps/`
 Where colonialone staff installs software/modules
