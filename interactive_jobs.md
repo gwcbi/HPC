@@ -57,15 +57,15 @@ You may wait here for a little bit as SLURM finds you the resources you need.
 Hopefully, within few minutes, you will see your allocation was granted. If there is not a node available, type control "C" to get out of the queue.
 
 
-### 3. Login to the allocated node
+### 3. Log in to the allocated node
 
 Unlike some other workload managers, SLURM does not automatically log you into the allocated node. 
-To access the resources, first we need to figure out what node we were assigned (in the `NODELIST` column).
+To access the resources, first we need to use `squeue` to figure out what node we were assigned (in the `NODELIST` column).
 
 ```bash
-[bendall@login3 ~]$ qstat
-         JOBID               NAME     STATE      TIME   NODES    CPUS  PARTITION           START_TIME   NODELIST(REASON)
-       2390150               bash   RUNNING   0:00:05       1      16      short  2017-04-20T07:30:32   node004
+[bendall@login3 ~]$ squeue
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+           2390150     short     bash  bendall  R       0:17      1 node004
 ```
 
 We can see that we were given access to `node004`. To login, simply SSH into this node:
