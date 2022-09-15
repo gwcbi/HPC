@@ -8,11 +8,11 @@ To request access, visit the [Getting Access](https://colonialone.gwu.edu/gettin
 
 After you get an email saying you are approved, log in on the command line by typing:
 
-`ssh <username>@pegasus.colonialone.gwu.edu`
+`ssh <username>@pegasus.arc.gwu.edu`
 
 where `<username>` is your GWU Net ID, the part of your email before the @.
 
-On your first connection to the HPC, you'll be prompted to accept the ssh keys and verify the fingerprint of ColonialOne. Every time you log in, you will be required to give your password, which is the same password you use to access your GW email account. Alternatively, if you want to save 40 minutes a year by not typing in your password every time, you can set up an [SSH key](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2). Additionally, you can set up an [alias](alias.md) so that you don't have to type in `ssh <username>@login.colonialone.gwu.edu` every time.
+On your first connection to the HPC, you'll be prompted to accept the ssh keys and verify the fingerprint of ColonialOne. Every time you log in, you will be required to give your password, which is the same password you use to access your GW email account. Alternatively, if you want to save 40 minutes a year by not typing in your password every time, you can set up an [SSH key](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2). Additionally, you can set up an [alias](alias.md) so that you don't have to type in `ssh <username>@pegasus.arc.gwu.edu` every time.
 
 To run a job on the cluster, use [SLURM](slurm.md), Colonial One's scheduler or run an [interactive job](interactive_jobs.md).
 
